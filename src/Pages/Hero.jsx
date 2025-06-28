@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 // Profile image
-import user from "../Assets/Images/user.jpeg";
+import user from "../Assets/Images/person.jpeg";
 // Hero section of the homepage
 export const Hero = () => {
   // Navigation hook
