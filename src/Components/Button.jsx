@@ -2,8 +2,7 @@ import React from "react";
 
 /*
   Reusable Button component
-
-  Props:
+Props:
     - onClick: function to handle click events
     - className: custom CSS classes for styling
     - children: content inside the button (text, icons)

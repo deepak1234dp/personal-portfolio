@@ -3,10 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../Components/Button";
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false); //State to control whether the mobile menu is open or closed
-
-
   const navigate = useNavigate('');
-
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">

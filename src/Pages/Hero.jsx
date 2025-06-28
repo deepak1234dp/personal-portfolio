@@ -2,12 +2,10 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 // Profile image
 import user from "../Assets/Images/user.jpeg";
-
 // Hero section of the homepage
 export const Hero = () => {
   // Navigation hook
   const navigate = useNavigate();
-
   return (
     <section
       className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-indigo-100 px-6 md:px-12 py-20 gap-10"

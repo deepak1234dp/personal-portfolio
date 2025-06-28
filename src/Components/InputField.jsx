@@ -1,11 +1,9 @@
 /*
   InputField component renders either a text input or textarea based on `textarea` prop.
-
-  Props:
+ Props:
   - textarea: boolean to decide whether to render a <textarea> (true) or <input> (false)
   - ...props: other input/textarea props like name, value, onChange, touched, error, placeholder, etc.
 */
-
 export const InputField = ({ textarea, ...props }) => (
     <>
         {textarea ? (
@@ -19,11 +17,8 @@ export const InputField = ({ textarea, ...props }) => (
                 className="w-full p-3 border rounded"
                 {...props}
             />
-          
-            
         )
         }
-        
         {/*
         Display validation error if:
                 - the field has been touched

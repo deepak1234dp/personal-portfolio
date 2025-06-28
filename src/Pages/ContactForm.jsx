@@ -42,13 +42,10 @@ export const ContactForm = () => {
       resetForm();
     },
   });
-
   return (
     <section className="py-20 px-4 bg-white" id="contact">
       <div className="max-w-3xl mx-auto">
         <h3 className="text-4xl font-bold mb-8 text-center my-21">Contact Me</h3>
-
-
         {/* Form element: onSubmit calls formik.handleSubmit */}
         <form onSubmit={formik.handleSubmit} className="space-y-6">
           <div>
@@ -67,16 +64,13 @@ export const ContactForm = () => {
               onBlur={formik.handleBlur}
               touched={formik.touched.name}
               error={formik.errors.name}
-
             />
             {/*
               Display validation error if:
                 - the field has been touched
                 - and there is an error message
             */}
-
           </div>
-
           <div>
             {/* Email input field */}
             <InputField
@@ -90,11 +84,8 @@ export const ContactForm = () => {
               touched={formik.touched.email}
               error={formik.errors.email}
             />
-
           </div>
-
           <div>
-
             {/* Message textarea field */}
             <InputField
               textarea
@@ -105,8 +96,8 @@ export const ContactForm = () => {
               value={formik.values.message}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              touched={formik.touched.email}
-              error={formik.errors.email}
+              touched={formik.touched.message}
+              error={formik.errors.message}
             />
 
           </div>
